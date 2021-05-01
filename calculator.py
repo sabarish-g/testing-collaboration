@@ -23,7 +23,7 @@ class Calculator:
         return self.a - self.b
  
 
-def main(x=10, y=5):
+def main():
     calc = Calculator(x,y)
     print('The addition is {}'.format(calc.add()))
     print('The subtraction is {}'.format(calc.subtract()))
@@ -32,7 +32,7 @@ def main(x=10, y=5):
 
 
 if __name__ == "__main__":
-    main()
+    main(x=1, y=2)
     main(x=100, y=2)
     main(x=10000, y=-5)
     main(x=-3, y=-3)
