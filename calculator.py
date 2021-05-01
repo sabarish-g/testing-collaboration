@@ -21,6 +21,14 @@ class Calculator:
     
     def subtract(self):
         return self.a - self.b
+    
+    def multiply(self):
+        return round(self.a * self.b, 2)
+    
+    def divide(self):
+        if self.b == 0:
+            return "Cannot divide by 0"
+        return round(self.a - self.b, 2)
  
 
 def main():
@@ -28,6 +36,7 @@ def main():
     print('The addition is {}'.format(calc.add()))
     print('The subtraction is {}'.format(calc.subtract()))
     print('The multiplication is {}'.format(calc.multiply()))
+    print('The divide is {}'.format(calc.divide()))
     
 
 
