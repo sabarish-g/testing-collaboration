@@ -21,9 +21,7 @@ class Calculator:
     
     def subtract(self):
         return self.a - self.b
-    
-    def multiply(self):
-        return round(self.a * self.b, 2)
+ 
 
 def main(x=10, y=5):
     calc = Calculator(x,y)
